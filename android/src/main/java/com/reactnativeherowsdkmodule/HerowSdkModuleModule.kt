@@ -8,8 +8,6 @@ import com.facebook.react.bridge.Promise
 import io.herow.sdk.connection.HerowPlatform
 import io.herow.sdk.detection.HerowInitializer
 
-import java.lang.Exception
-
 class HerowSdkModuleModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
 
   private val herowInitializer: HerowInitializer = HerowInitializer.getInstance(reactContext)
