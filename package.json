@@ -1,6 +1,6 @@
 {
   "name": "herow-plugin-react-native",
-  "version": "7.1.0",
+  "version": "7.1.1",
   "description": "Bridge to access to the HEROW SDK.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

@@ -15,10 +15,16 @@ class HerowSdkModuleModule(reactContext: ReactApplicationContext) : ReactContext
   override fun getName() = "HerowSdkModule"
 
   @ReactMethod
-  fun initialize(herowPlatform: String, username: String, password: String) = herowInitializer
-      .configApp(username, password)
-      .configPlatform(HerowPlatform.valueOf(herowPlatform))
-      .synchronize()
+  fun initialize(herowPlatform: String, username: String, password: String) {
+    try {
+      herowInitializer
+        .configApp(username, password)
+        .configPlatform(HerowPlatform.valueOf(herowPlatform))
+        .synchronize()
+    } catch (e : Exception) {
+      println("Exception caught: ${e.message}")
+    }
+  }
 
   @ReactMethod
   fun setCustomId(customId: String) = herowInitializer.setCustomId(customId)
@@ -27,10 +33,22 @@ class HerowSdkModuleModule(reactContext: ReactApplicationContext) : ReactContext
   fun removeCustomId() = herowInitializer.removeCustomId()
 
   @ReactMethod
-  fun acceptOptin() = herowInitializer.acceptOptin()
+  fun acceptOptin() {
+    try {
+      herowInitializer.acceptOptin()
+    } catch (e : Exception) {
+      println("Exception caught: ${e.message}")
+    }
+  }
 
   @ReactMethod
-  fun refuseOptin() = herowInitializer.refuseOptin()
+  fun refuseOptin() {
+    try {
+      herowInitializer.refuseOptin()
+    } catch (e : Exception) {
+      println("Exception caught: ${e.message}")
+    }
+  }
 
   @ReactMethod
   fun launchClickAndCollect() = herowInitializer.launchClickAndCollect()
