@@ -12,7 +12,7 @@ npx react-native init herowApp
 
 ```sh
 cd herowApp
-npm install herow-plugin-react-native@7.1.1
+npm install herow-plugin-react-native@7.2.0
 ```
 
 You should update several configuration files before modifying your code.
