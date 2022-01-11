@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.platforms    = { :ios => "11.0" }
   s.source       = {
-		:http => "https://github.com/herowio/herow-sdk-ios/releases/download/v7.1.0/herow_sdk_ios.framework.zip",
+		:http => "https://github.com/herowio/herow-sdk-ios/releases/download/v7.2.1/herow_sdk_ios.xcframework.zip",
 		:type => "zip"
 	}
 
