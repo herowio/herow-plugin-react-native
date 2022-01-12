@@ -32,7 +32,7 @@ android {
     minSdkVersion 21
     targetSdkVersion getExtOrIntegerDefault('targetSdkVersion')
     versionCode 1
-    versionName "7.2.1"
+    versionName "7.1.2"
     
   }
   
@@ -127,5 +127,5 @@ dependencies {
   // noinspection GradleDynamicVersion
   api 'com.facebook.react:react-native:+'
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-  implementation 'io.herow.sdk:detection:7.2.0'
+  implementation 'io.herow.sdk:detection:7.1.0'
 }
